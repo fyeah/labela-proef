@@ -4,11 +4,11 @@ from sqlalchemy import (
 	Integer,
 	Text,
 	Numeric,
-	DateTime
+	DateTime,
 	ForeignKey
 )
 
-import datetime
+from datetime import datetime
 
 # from sqlalchemy.orm import relationship
 

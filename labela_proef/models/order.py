@@ -11,7 +11,7 @@ from sqlalchemy import (
 from sqlalchemy.orm import relationship
 
 import enum
-import datetime
+from datetime import datetime
 
 
 from .meta import Base
