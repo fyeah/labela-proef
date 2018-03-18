@@ -1,0 +1,3 @@
+[run]
+source = labela_proef
+omit = labela_proef/test*
