@@ -1,12 +1,12 @@
 ## Setup and run steps
 ### Database
-Create a new user inside psql.
+Create a new user inside psql.  
 `CREATE USER lba WITH password 'a';`
 
-And create a new database.
+And create a new database.  
 `CREATE DATABASE lbaoproef;`
 
-And grant priviliges.
+And grant priviliges.  
 `GRANT ALL PRIVILEGES ON DATABASE lbaproef to lba;`
 
 The backend expects postgresql to run on the default localhost port 5432.
@@ -15,33 +15,33 @@ The backend expects postgresql to run on the default localhost port 5432.
 
 Clone this repository.
 
-Create a Python virtual environment inside it.
+Create a Python virtual environment inside it.  
 `python3 -m venv ./env` (I used virtualenv).
 
-Activate the env.
+Activate the env.  
 `source ./env/bin/activate`
 
-Upgrade packaging tools (not sure if necessary).
+Upgrade packaging tools (not sure if necessary).  
 `pip install --upgrade pip setuptools`
 
-Install the project in editable mode with its testing requirements.
+Install the project in editable mode with its testing requirements.  
 `pip install -e ".[testing]`
 
-Configure the database.
+Configure the database.  
 `initialize_labela_proef_db development.ini`
 
-Run the project.
+Run the project.  
 `pserve development.ini`
 
 ## JSON data to test the endpoints
-/product POST:
+/product POST:  
 `{
 	"name": "autoband",
 	"description": "Is lekker snel",
 	"price": 38.99
 }`
 
-/user POST:
+/user POST:  
 `{
 	"email": "yorin@hotmail.com",
 	"password": "testen33",
@@ -55,9 +55,9 @@ Run the project.
 }`
 
 ## Next steps 
--finish basic /order routes (create, getAll, getById)
--add authentication for users/admins (add admin as user or seperate entity), I like JWT bearer token.
--add authorization for user/admin routes.
--implement product, user and order update/delete etc.
--improve request validation and error messages.
--tax handling.
+-finish basic /order routes (create, getAll, getById)  
+-add authentication for users/admins (add admin as user or seperate entity), I like JWT bearer token.  
+-add authorization for user/admin routes.  
+-implement product, user and order update/delete etc.  
+-improve request validation and error messages.  
+-tax handling.  
