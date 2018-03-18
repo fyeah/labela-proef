@@ -34,14 +34,16 @@ Run the project.
 `pserve development.ini`
 
 ## JSON data to test the endpoints
-/product POST:  
+/products POST:  
 `{
 	"name": "autoband",
 	"description": "Is lekker snel",
 	"price": 38.99
-}`
+}`  
 
-/user POST:  
+Test GET /products and GET /products/1
+
+/users POST:  
 `{
 	"email": "yorin@hotmail.com",
 	"password": "testen33",
@@ -62,3 +64,4 @@ Run the project.
 -implement product, user and order update/delete etc.  
 -improve request validation and error messages.  
 -tax handling.  
+-and a lot more things that are requirement specific.. ;)
