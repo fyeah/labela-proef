@@ -4,7 +4,7 @@ Create a new user inside psql.
 `CREATE USER lba WITH password 'a';`
 
 And create a new database.  
-`CREATE DATABASE lbaoproef;`
+`CREATE DATABASE lbaproef;`
 
 And grant priviliges.  
 `GRANT ALL PRIVILEGES ON DATABASE lbaproef to lba;`
