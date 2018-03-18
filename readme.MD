@@ -25,7 +25,7 @@ Upgrade packaging tools (not sure if necessary).
 `pip install --upgrade pip setuptools`
 
 Install the project in editable mode with its testing requirements.  
-`pip install -e ".[testing]`
+`pip install -e ".[testing]"`
 
 Configure the database.  
 `initialize_labela_proef_db development.ini`
@@ -53,6 +53,7 @@ Run the project.
 	"city": "Schoorl",
 	"country": "The Netherlands"
 }`
+
 
 ## Next steps 
 -finish basic /order routes (create, getAll, getById)  
