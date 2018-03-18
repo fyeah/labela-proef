@@ -58,6 +58,8 @@ Test GET /products and GET /products/1
 
 Test GET /users
 
+Order only has models so far.
+
 ## Next steps 
 -finish basic /order routes (create, getAll, getById)  
 -add authentication for users/admins (add admin as user or seperate entity), I like JWT bearer token.  
