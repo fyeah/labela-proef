@@ -8,8 +8,7 @@ from sqlalchemy import (
 	Enum,
 	ForeignKey
 )
-from sqlalch
-emy.orm import relationship
+from sqlalchemy.orm import relationship
 
 import enum
 import datetime
