@@ -54,8 +54,9 @@ Test GET /products and GET /products/1
 	"postcode": "1871AH",
 	"city": "Schoorl",
 	"country": "The Netherlands"
-}`
+}`  
 
+Test GET /users
 
 ## Next steps 
 -finish basic /order routes (create, getAll, getById)  
