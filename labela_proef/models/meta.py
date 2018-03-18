@@ -1,6 +1,5 @@
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.schema import MetaData
-import simplejson as json
 from decimal import Decimal as D
 
 # Recommended naming convention used by Alembic, as various different database
